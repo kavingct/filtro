@@ -58,6 +58,7 @@ Filter<Integer> filter = new NumberRangeFilter<Integer>(2,4);
 FilterMap<Integer,String> result = map.filterKeys(filter);
 ```
 
+
 ###### List
 Filtro comes pre-built with a class called `FilterList` which extends `java.util.ArrayList` internally. You get all features of 
 
@@ -105,6 +106,7 @@ Filter<Integer> filter = new NumberRangeFilter<Integer>(2,4);
 
 FilterList<Integer> result = list.filter(filter);
 ```
+
 
 ###### Set
 Filtro comes pre-built with a class called `FilterSet` which extends `java.util.HashSet` internally. You get all features of 
@@ -154,6 +156,7 @@ Filter<Integer> filter = new NumberRangeFilter<Integer>(2,4);
 FilterSet<Integer> result = list.filter(filter);
 ```
 
+
 ###### Filtering based on multiple Filters
 You may find a situation where you need to filter map, list or set's values based on multiple filter rules. To facilitate this purpose the `filterKeys`,`filterValues` methods in FilterMap and `filter` method in FilterList and FilterSet also accept a `List` of filters.
 ```java
@@ -163,6 +166,7 @@ filters.add(new NumberMaxFilter<Integer>(5));
 
 FilterList<Integer> result = list.filter(filters);
 ```
+
 
 ###### Filtering any Map, List or Set implementations
 Filtro doesn't restrict you to use our implementations such as `FilterMap`,`FilterList` and `FilterSet`. You can use any desired implementation of `Map`,'List' and `Set` interfaces and still filter it using our library. The `Filters` class contains several static methods to filter any implementation of java collections.
@@ -183,6 +187,7 @@ Map<Integer,String> result = Filters.filterMapKeys(map,filters,false);
 
 The first parameter is the map which you need to filter. The second parameter is the `list` of filters based on which map keys should be filtered. The third parameter is a boolean flag indicating whether the original map should be modified or just a new copy should be returned.
 If `true` the elements which fails filter test will be removed in the original map itself. If `false` the original map will remain unchanged and you can obtain the filter result as return value from the method.
+
 
 ###### Creating custom Filter rule.
 You can create a custom filter rule by extending the `Filter` interface.
