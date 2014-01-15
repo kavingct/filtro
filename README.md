@@ -1,4 +1,4 @@
-Filtro
+Filtro [![Build Status](https://travis-ci.org/kavingct/filtro.png?branch=master)](https://travis-ci.org/kavingct/filtro)
 ======
 *A Java collections filter library*
 
