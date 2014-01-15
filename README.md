@@ -2,9 +2,17 @@ Filtro
 ======
 *Java collections filter library*
 
-This library allows you to filter elements in Java collections using a set of user defined filter rules. You can use any of the 
+This library allows you to filter elements in Java collections using a set of user defined filter rules. You can use any of the pre-defined filter modules that comes with the library or construct a new one by extending Filter interface.
 
-pre-defined filter modules that comes with the library or construct a new one by extending Filter interface.
+#### Installation:
+Filtro is available in Maven central repository. Just add the following dependency to your pom.xml and you are good to go.
+```xml
+<dependency>
+	<groupId>com.genzis.filtro</groupId>
+	<artifactId>filtro</artifactId>
+	<version>1.0</version>
+</dependency>
+```
 
 #### Example usage:
 ###### Map
